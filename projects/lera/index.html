@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html lang="'en">
+
 <head>
     <meta charset="'utf-8">
-    <title>Лерочка, с Новым Годом!</title>
+    <title>Лерочка, с Новым 2023 Годом!</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript">
+        function isValid() {
+            var keyvalue = document.getElementById('keyvalue').value;
+            if (keyvalue == "ВНиНИ") { document.getElementById('welcomeDiv').style.display = "block"; }
+            else { alert('Нет, не то =( А сутулые собаки продолжают хихикать =(') }
+        }
+    </script>
+
 </head>
+
 <body>
-    <h1>Лерочка, с Новым Годом!</h1>
+    <div class="main">
+        <p>
+            Я, добрый рыцарь <strong>Оле’га из рода Френов</strong>, приготовил подарок дорогой своему сердцу
+            <strong>Лерочке</strong>.
+        </p>
+
+        <p>
+            Но случилось так, что местные сутулые собаки решили навести суету и испортить праздник, украв подарок!
+        </p>
+
+        <p>
+            Тогда я обратился за помощью к могущественному волшебнику <strong>Нообуку</strong>.
+        </p>
+
+        <p>
+            Выслушав мою историю он сдвинул остроконечную шляпу набекрень, достал посох из под пустых бутылок
+            апельсинового сока и, хорошенько прочистив горло, изверг из себя сильное колдунство.
+        </p>
+
+        <p>
+            Из посоха вырвалась струя, сломав крышу волшебника и, как мне он сказал позже, выплюнула в наш
+            мир, эмм, <strong>Объекты Трансграничного Познания Бытия И Аварийного Восстановления Данных
+                Универсальные</strong>. Они и выведут нас на заклинание, которое сможет помочь найти подарок.
+            Честно, я ни черта не понял, но <strong>Нообук</strong> лишь процедил что-то вроде: “ламер”, когда я
+            попытался узнать, что всё это значит.
+        </p>
+
+        <p>
+            Он сказал, что это будет сложное, но интересное приключение. И он ощутил своим магическим взором, что
+            один из <strong>Объектов-что-то-там</strong> находится в вещах <strong>Лерочки</strong>. Ещё он
+            почувствовал, что в таверне уже разливают
+            яблочный сидр, после чего, сославшись на срочные дела, выбежал в дверь, крикнув напоследок, что только
+            <strong>Лерочке</strong> по силам со всем разобраться…
+        </p>
+
+        <div class="PasswordField" onsubmit="return false;">
+            <form>
+                <input class='input' type="text" id="keyvalue" name="keyvalue" placeholder="и сказала она..."
+                    onkeydown="if (event.keyCode == 13) document.getElementById('subPass').click()">
+            </form>
+        </div>
+
+        <div class="PasswordField" onsubmit="return false;">
+            <form>
+                <input class='inputCheck' type="button" id="subPass" value="&#10024;Проверить магию&#10024;" onclick="isValid(this);">
+            </form>
+        </div>
+
+        <div id="welcomeDiv" style="display:none;" class="answer_list">
+            <p style="font-size: 24px">У тебя всё получилось!</p>
+            <img src="./img/bunny-dance.gif" width="200"><br>
+            <a href="./pages/final.html" style="font-size: 24px">Вперёд, за подарком!</a>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
